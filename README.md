@@ -119,6 +119,7 @@ allorad tx staking delegate $(allorad keys show wallet --bech val -a --keyring-b
 نود وورکر رو هم راه اندازی کنید طبق ویدیو
 Worker
 ```
+cd
 wget https://raw.githubusercontent.com/dxzenith/allora-worker-node/main/allora.sh && chmod +x allora.sh && ./allora.sh
 ```
 

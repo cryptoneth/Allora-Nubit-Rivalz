@@ -47,6 +47,8 @@ journalctl -u allora-node -f -o cat
 
 ```
 
+کنترل سی بزنید استوپ شه
+
 
 اگر میخواید از ولت خودتون استفاده کنید
 ```
@@ -68,7 +70,7 @@ https://faucet.testnet.allora.network/
 allorad status | jq .sync_info
 ```
 
-صبر کنید نود سینک شه
+صبر کنید نود سینک شه و False بشه
 
 
 ```

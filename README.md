@@ -113,7 +113,7 @@ allorad query staking validator <validator_address>
 ```
 
 ```
-allorad tx staking delegate $(allorad keys show wallet --bech val -a --keyring-backend test) 500000000uallo --from "your_wallet_name" --gas=auto --gas-adjustment=1.4 --keyring-backend test -y
+allorad tx staking delegate $(allorad keys show wallet --bech val -a --keyring-backend test) 500000000uallo --from wallet --gas=auto --gas-adjustment=1.4 --keyring-backend test -y
 ```
 
 نود وورکر رو هم راه اندازی کنید طبق ویدیو

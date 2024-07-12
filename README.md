@@ -192,6 +192,11 @@ screen -S nubit
 curl -sL1 https://nubit.sh | bash
 ```
 
+
+به سایت نوبیت میریم
+
+https://alpha.nubit.org/
+
 اگر میخواید ولت ریکاوری کنید 
 
 https://t.me/crypton_calls/17552 اموزش تو چنل هست

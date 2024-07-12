@@ -370,6 +370,6 @@ chmod +x VPSFix.sh
 
 اینم سایت اخر برای ولیدیت کردن
 
-https://be.rivalz.ai/api-v1/orbit-db/verify-orbit-db/<YOUR WALLET ADDRESS HERE>
+https://be.rivalz.ai/api-v1/orbit-db/verify-orbit-db/yourwalletaddress
 
 *** شما در نگاه اول با صفحه ای خالی مواجهی انگار ، سمت چپ بالای تصویر سیستم عامل میتونید روی قسمت منو مانند کلیک کنید تا بتونید موزیلا و فولدر و ... رو ببینید

@@ -169,6 +169,12 @@ docker compose up -d
 
 #Nubit
 
+```
+cd
+curl -sL1 https://nubit.sh | bash
+```
+
+
 یک اسکرین ایجاد کنید
 ```
 apt install screen 

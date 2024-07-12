@@ -49,7 +49,24 @@ journalctl -u allora-node -f -o cat
 
 کنترل سی بزنید استوپ شه
 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+اگر لاگ سالم نمینداخت هر کاری کردید یک بار نود رو ری استارت کنید
 
+```
+systemctl restart allora-node
+```
+اگر بازم هر کاری کردید لاگ سالم نمینداخت 
+یکبار بزنید
+```
+cd
+systemctl stop allora-node
+rm -r deploy-node-allora
+```
+
+دوباره کامند هارو از اول بزنید . فقط اسم Moniker یا نودتونم عوض کنید
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
 اگر میخواید از ولت خودتون استفاده کنید
 ```
 allorad keys add wallet --recover
@@ -108,7 +125,7 @@ wget https://raw.githubusercontent.com/dxzenith/allora-worker-node/main/allora.s
 
 *** کامند ری استارت نود ولیدیتوری در صورت نیاز
 ```
-systemctl start allora-node
+systemctl restart allora-node
 ```
 
 ** کامند چک کردن سلامت نود Woker

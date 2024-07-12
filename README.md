@@ -71,7 +71,10 @@ allorad status | jq .sync_info
 ```
 
 صبر کنید نود سینک شه و False بشه
-
+```
+allorad query bank balances <your_wallet_address>
+```
+موجودی ولت رو چک کنید
 
 ```
 cd
@@ -101,13 +104,60 @@ Worker
 ```
 wget https://raw.githubusercontent.com/dxzenith/allora-worker-node/main/allora.sh && chmod +x allora.sh && ./allora.sh
 ```
+
+
+*** کامند ری استارت نود ولیدیتوری در صورت نیاز
+```
+systemctl start allora-node
+```
+
+** کامند چک کردن سلامت نود Woker
+
+
+```
+curl --location 'http://localhost:6000/api/v1/functions/execute' \
+--header 'Content-Type: application/json' \
+--data '{
+    "function_id": "bafybeigpiwl3o73zvvl6dxdqu7zqcub5mhg65jiky2xqb4rdhfmikswzqm",
+    "method": "allora-inference-function.wasm",
+    "parameters": null,
+    "topic": "1",
+    "config": {
+        "env_vars": [
+            {
+                "name": "BLS_REQUEST_PATH",
+                "value": "/api"
+            },
+            {
+                "name": "ALLORA_ARG_PARAMS",
+                "value": "ETH"
+            }
+        ],
+        "number_of_nodes": -1,
+        "timeout": 2
+    }
+}'
+
+```
+
+کامند ری استارت کردن نور وورکر 
+```
+cd allora-chain
+cd basic-coin-prediction-node
+docker compose up -d
+```
+
 --------------------------------------------------------------------------------------------------
 
 #Nubit
+
+یک اسکرین ایجاد کنید
 ```
 apt install screen 
 screen -S nubit
 ```
+
+کنترل آ دی بزنید از اسکرین خارج شید
 ```
 curl -sL1 https://nubit.sh | bash
 ```
@@ -115,6 +165,14 @@ curl -sL1 https://nubit.sh | bash
 اگر میخواید ولت ریکاوری کنید 
 
 https://t.me/crypton_calls/17552 اموزش تو چنل هست
+
+*** کامند ری استارت کردن نوبیت اگر متوقف شده بود
+```
+screen -x nubit
+curl -sL1 https://nubit.sh | bash
+```
+
+کنترل آ دی بزنید از اسکرین خارج شید
 
 --------------------------------------------------------------------------------------------------
 

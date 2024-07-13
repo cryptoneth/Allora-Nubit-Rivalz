@@ -85,7 +85,7 @@ allorad keys add wallet
 ```
 
 فاست بگیرید
-https://faucet.edgenet.allora.network/
+
 https://faucet.testnet.allora.network/
 
 
